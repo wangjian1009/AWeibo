@@ -1,0 +1,282 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C94661B715611338004336EC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C94661B615611338004336EC /* UIKit.framework */; };
+		C94661B915611338004336EC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C94661B815611338004336EC /* Foundation.framework */; };
+		C94661BB15611338004336EC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C94661BA15611338004336EC /* CoreGraphics.framework */; };
+		C9856A7F156118E800ABF81D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C9856A7B156118E800ABF81D /* AppDelegate.m */; };
+		C9856A80156118E800ABF81D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C9856A7C156118E800ABF81D /* main.m */; };
+		C9856A81156118E800ABF81D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9856A7E156118E800ABF81D /* ViewController.m */; };
+		C9856A841561193500ABF81D /* AWeibo-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C9856A821561193500ABF81D /* AWeibo-Info.plist */; };
+		C9856A8A15611B0700ABF81D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C9856A8615611B0700ABF81D /* InfoPlist.strings */; };
+		C9856A8B15611B0700ABF81D /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9856A8815611B0700ABF81D /* ViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C94661B215611338004336EC /* AWeibo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AWeibo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C94661B615611338004336EC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C94661B815611338004336EC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C94661BA15611338004336EC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C9856A79156118C700ABF81D /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../AWeibo/ios/AppDelegate.h; sourceTree = "<group>"; };
+		C9856A7B156118E800ABF81D /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = ../AWeibo/ios/AppDelegate.m; sourceTree = "<group>"; };
+		C9856A7C156118E800ABF81D /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = ../AWeibo/ios/main.m; sourceTree = "<group>"; };
+		C9856A7D156118E800ABF81D /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = ../AWeibo/ios/ViewController.h; sourceTree = "<group>"; };
+		C9856A7E156118E800ABF81D /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = ../AWeibo/ios/ViewController.m; sourceTree = "<group>"; };
+		C9856A821561193500ABF81D /* AWeibo-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "AWeibo-Info.plist"; path = "../AWeibo/ios/AWeibo-Info.plist"; sourceTree = "<group>"; };
+		C9856A831561193500ABF81D /* AWeibo-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "AWeibo-Prefix.pch"; path = "../AWeibo/ios/AWeibo-Prefix.pch"; sourceTree = "<group>"; };
+		C9856A8715611B0700ABF81D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = ../AWeibo/ios/en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C9856A8915611B0700ABF81D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = ../AWeibo/ios/en.lproj/ViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C94661AF15611338004336EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C94661B715611338004336EC /* UIKit.framework in Frameworks */,
+				C94661B915611338004336EC /* Foundation.framework in Frameworks */,
+				C94661BB15611338004336EC /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C94661A715611337004336EC = {
+			isa = PBXGroup;
+			children = (
+				C9856A7A156118D100ABF81D /* AWeibo */,
+				C94661B515611338004336EC /* Frameworks */,
+				C94661B315611338004336EC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C94661B315611338004336EC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C94661B215611338004336EC /* AWeibo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C94661B515611338004336EC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C94661B615611338004336EC /* UIKit.framework */,
+				C94661B815611338004336EC /* Foundation.framework */,
+				C94661BA15611338004336EC /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C9856A7A156118D100ABF81D /* AWeibo */ = {
+			isa = PBXGroup;
+			children = (
+				C9856A8515611AEF00ABF81D /* Supporting Files */,
+				C9856A7B156118E800ABF81D /* AppDelegate.m */,
+				C9856A7D156118E800ABF81D /* ViewController.h */,
+				C9856A7E156118E800ABF81D /* ViewController.m */,
+				C9856A79156118C700ABF81D /* AppDelegate.h */,
+			);
+			name = AWeibo;
+			sourceTree = "<group>";
+		};
+		C9856A8515611AEF00ABF81D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C9856A821561193500ABF81D /* AWeibo-Info.plist */,
+				C9856A7C156118E800ABF81D /* main.m */,
+				C9856A831561193500ABF81D /* AWeibo-Prefix.pch */,
+				C9856A8615611B0700ABF81D /* InfoPlist.strings */,
+				C9856A8815611B0700ABF81D /* ViewController.xib */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C94661B115611338004336EC /* AWeibo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C94661D015611339004336EC /* Build configuration list for PBXNativeTarget "AWeibo" */;
+			buildPhases = (
+				C94661AE15611338004336EC /* Sources */,
+				C94661AF15611338004336EC /* Frameworks */,
+				C94661B015611338004336EC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AWeibo;
+			productName = AWeibo;
+			productReference = C94661B215611338004336EC /* AWeibo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C94661A915611337004336EC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = C94661AC15611337004336EC /* Build configuration list for PBXProject "AWeibo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C94661A715611337004336EC;
+			productRefGroup = C94661B315611338004336EC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C94661B115611338004336EC /* AWeibo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C94661B015611338004336EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9856A841561193500ABF81D /* AWeibo-Info.plist in Resources */,
+				C9856A8A15611B0700ABF81D /* InfoPlist.strings in Resources */,
+				C9856A8B15611B0700ABF81D /* ViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C94661AE15611338004336EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9856A7F156118E800ABF81D /* AppDelegate.m in Sources */,
+				C9856A80156118E800ABF81D /* main.m in Sources */,
+				C9856A81156118E800ABF81D /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C9856A8615611B0700ABF81D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C9856A8715611B0700ABF81D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C9856A8815611B0700ABF81D /* ViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C9856A8915611B0700ABF81D /* en */,
+			);
+			name = ViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C94661CE15611339004336EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C94661CF15611339004336EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C94661D115611339004336EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "../AWeibo/ios/AWeibo-Prefix.pch";
+				INFOPLIST_FILE = "../AWeibo/ios/AWeibo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C94661D215611339004336EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "../AWeibo/ios/AWeibo-Prefix.pch";
+				INFOPLIST_FILE = "../AWeibo/ios/AWeibo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C94661AC15611337004336EC /* Build configuration list for PBXProject "AWeibo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C94661CE15611339004336EC /* Debug */,
+				C94661CF15611339004336EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C94661D015611339004336EC /* Build configuration list for PBXNativeTarget "AWeibo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C94661D115611339004336EC /* Debug */,
+				C94661D215611339004336EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C94661A915611337004336EC /* Project object */;
+}
