@@ -13,7 +13,6 @@
 		C9856A7F156118E800ABF81D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C9856A7B156118E800ABF81D /* AppDelegate.m */; };
 		C9856A80156118E800ABF81D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C9856A7C156118E800ABF81D /* main.m */; };
 		C9856A81156118E800ABF81D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9856A7E156118E800ABF81D /* ViewController.m */; };
-		C9856A841561193500ABF81D /* AWeibo-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C9856A821561193500ABF81D /* AWeibo-Info.plist */; };
 		C9856A8A15611B0700ABF81D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C9856A8615611B0700ABF81D /* InfoPlist.strings */; };
 		C9856A8B15611B0700ABF81D /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9856A8815611B0700ABF81D /* ViewController.xib */; };
 /* End PBXBuildFile section */
@@ -149,7 +148,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C9856A841561193500ABF81D /* AWeibo-Info.plist in Resources */,
 				C9856A8A15611B0700ABF81D /* InfoPlist.strings in Resources */,
 				C9856A8B15611B0700ABF81D /* ViewController.xib in Resources */,
 			);

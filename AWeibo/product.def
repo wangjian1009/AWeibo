@@ -1,0 +1,5 @@
+PRODUCT_NAME=AWeibo
+PRODUCT_NAME:rfc1034identifier=AWeibo
+EXECUTABLE_NAME=AWeibo
+
+
