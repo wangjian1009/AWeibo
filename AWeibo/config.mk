@@ -1,7 +1,8 @@
 product:=AWeibo
 $(product).type:=progn install
-$(product).depends:=cpepp_cfg \
-                 gd_app gd_evt gd_net gdpp_nm cpepp_dp gdpp_app gdpp_timer
+$(product).depends:=libmmseg \
+                    cpepp_cfg \
+                    gd_app gd_evt gd_net gdpp_nm cpepp_dp gdpp_app gdpp_timer
 $(product).libraries:=
 $(product).c.sources:= $(wildcard $(product-base)/ios/*.m)
 $(product).c.frameworks:=CoreGraphics UIKit Foundation
