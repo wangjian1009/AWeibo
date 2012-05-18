@@ -17,8 +17,6 @@
 		C942236915652B5300354D37 /* ev.c in Sources */ = {isa = PBXBuildFile; fileRef = C942234D15652B5300354D37 /* ev.c */; };
 		C942237A15652B5300354D37 /* event.c in Sources */ = {isa = PBXBuildFile; fileRef = C942235615652B5300354D37 /* event.c */; };
 		C942237B15652B5300354D37 /* event.c in Sources */ = {isa = PBXBuildFile; fileRef = C942235615652B5300354D37 /* event.c */; };
-		C942237C15652B5300354D37 /* config.h in Headers */ = {isa = PBXBuildFile; fileRef = C942235815652B5300354D37 /* config.h */; };
-		C942237D15652B5300354D37 /* config.h in Headers */ = {isa = PBXBuildFile; fileRef = C942235815652B5300354D37 /* config.h */; };
 		C94661B715611338004336EC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C94661B615611338004336EC /* UIKit.framework */; };
 		C94661B915611338004336EC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C94661B815611338004336EC /* Foundation.framework */; };
 		C94661BB15611338004336EC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C94661BA15611338004336EC /* CoreGraphics.framework */; };
@@ -445,6 +443,7 @@
 
 /* Begin PBXFileReference section */
 		8E19ED8815665F6E00DB71F6 /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
+		8E19ED8A1566666F00DB71F6 /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
 		C942233A15652AD600354D37 /* libev-ios.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libev-ios.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C942234215652ADF00354D37 /* libev-mac.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libev-mac.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C942234815652B5300354D37 /* ev++.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ev++.h"; sourceTree = "<group>"; };
@@ -452,7 +451,6 @@
 		C942234A15652B5300354D37 /* event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = event.h; sourceTree = "<group>"; };
 		C942234D15652B5300354D37 /* ev.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ev.c; sourceTree = "<group>"; };
 		C942235615652B5300354D37 /* event.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = event.c; sourceTree = "<group>"; };
-		C942235815652B5300354D37 /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
 		C94661B215611338004336EC /* AWeibo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AWeibo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C94661B615611338004336EC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		C94661B815611338004336EC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -888,6 +886,15 @@
 			path = ../../libxml2/src/mac;
 			sourceTree = "<group>";
 		};
+		8E19ED891566666F00DB71F6 /* iphone */ = {
+			isa = PBXGroup;
+			children = (
+				8E19ED8A1566666F00DB71F6 /* config.h */,
+			);
+			name = iphone;
+			path = ../../libxml2/src/iphone;
+			sourceTree = "<group>";
+		};
 		C942234615652B5300354D37 /* libev */ = {
 			isa = PBXGroup;
 			children = (
@@ -913,18 +920,10 @@
 			children = (
 				C942234D15652B5300354D37 /* ev.c */,
 				C942235615652B5300354D37 /* event.c */,
+				8E19ED891566666F00DB71F6 /* iphone */,
 				8E19ED8715665F6E00DB71F6 /* mac */,
-				C942235715652B5300354D37 /* iphone */,
 			);
 			path = src;
-			sourceTree = "<group>";
-		};
-		C942235715652B5300354D37 /* iphone */ = {
-			isa = PBXGroup;
-			children = (
-				C942235815652B5300354D37 /* config.h */,
-			);
-			path = iphone;
 			sourceTree = "<group>";
 		};
 		C94661A715611337004336EC = {
@@ -1749,7 +1748,6 @@
 				C942236215652B5300354D37 /* ev++.h in Headers */,
 				C942236415652B5300354D37 /* ev.h in Headers */,
 				C942236615652B5300354D37 /* event.h in Headers */,
-				C942237C15652B5300354D37 /* config.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1760,7 +1758,6 @@
 				C942236315652B5300354D37 /* ev++.h in Headers */,
 				C942236515652B5300354D37 /* ev.h in Headers */,
 				C942236715652B5300354D37 /* event.h in Headers */,
-				C942237D15652B5300354D37 /* config.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
