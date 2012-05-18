@@ -1,0 +1,8 @@
+- name: app_net_env
+
+- name: app_setup
+  debug-app: 1
+  tickers:
+    - net
+    - tl: {process-count: 500}
+    - net

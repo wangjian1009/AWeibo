@@ -17,10 +17,9 @@ $(product).c.export-symbols:= \
                         app_net_env_global_init app_net_env_global_fini
 
 $(product).output:=AWeibo.app
-$(product).source-r-dirs:=AWeibo/Resources/etc
-$(product).target-r-dirs:=AWeibo.app/etc
 $(product).install:= $(call def-cvt-file,AWeibo/ios/AWeibo-Info.plist, AWeibo.app/Info.plist, AWeibo/product.def) \
-                     $(call def-copy-dir-r,Resources/etc, Tank.app/etc) \
-                     $(call def-copy-dir,Resources, AWeibo.app, png PNG caf txt mp3)
+                     $(call def-cvt-file-ex,AWeibo/ios/en.lproj/ViewController.xib, AWeibo.app/ViewController.nib, xib-nib) \
+                     $(call def-copy-dir-r,AWeibo/Resources/etc, AWeibo.app/etc) \
+                     $(call def-copy-dir,AWeibo/Resources, AWeibo.app, png PNG caf txt mp3)
 
 $(eval $(call product-def,$(product),product))
