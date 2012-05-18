@@ -19,8 +19,6 @@
 		C942237B15652B5300354D37 /* event.c in Sources */ = {isa = PBXBuildFile; fileRef = C942235615652B5300354D37 /* event.c */; };
 		C942237C15652B5300354D37 /* config.h in Headers */ = {isa = PBXBuildFile; fileRef = C942235815652B5300354D37 /* config.h */; };
 		C942237D15652B5300354D37 /* config.h in Headers */ = {isa = PBXBuildFile; fileRef = C942235815652B5300354D37 /* config.h */; };
-		C942238215652B5300354D37 /* config.h in Headers */ = {isa = PBXBuildFile; fileRef = C942235E15652B5300354D37 /* config.h */; };
-		C942238315652B5300354D37 /* config.h in Headers */ = {isa = PBXBuildFile; fileRef = C942235E15652B5300354D37 /* config.h */; };
 		C94661B715611338004336EC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C94661B615611338004336EC /* UIKit.framework */; };
 		C94661B915611338004336EC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C94661B815611338004336EC /* Foundation.framework */; };
 		C94661BB15611338004336EC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C94661BA15611338004336EC /* CoreGraphics.framework */; };
@@ -446,6 +444,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8E19ED8815665F6E00DB71F6 /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
 		C942233A15652AD600354D37 /* libev-ios.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libev-ios.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C942234215652ADF00354D37 /* libev-mac.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libev-mac.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C942234815652B5300354D37 /* ev++.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ev++.h"; sourceTree = "<group>"; };
@@ -454,7 +453,6 @@
 		C942234D15652B5300354D37 /* ev.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ev.c; sourceTree = "<group>"; };
 		C942235615652B5300354D37 /* event.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = event.c; sourceTree = "<group>"; };
 		C942235815652B5300354D37 /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
-		C942235E15652B5300354D37 /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
 		C94661B215611338004336EC /* AWeibo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AWeibo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C94661B615611338004336EC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		C94661B815611338004336EC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -881,6 +879,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8E19ED8715665F6E00DB71F6 /* mac */ = {
+			isa = PBXGroup;
+			children = (
+				8E19ED8815665F6E00DB71F6 /* config.h */,
+			);
+			name = mac;
+			path = ../../libxml2/src/mac;
+			sourceTree = "<group>";
+		};
 		C942234615652B5300354D37 /* libev */ = {
 			isa = PBXGroup;
 			children = (
@@ -906,8 +913,8 @@
 			children = (
 				C942234D15652B5300354D37 /* ev.c */,
 				C942235615652B5300354D37 /* event.c */,
+				8E19ED8715665F6E00DB71F6 /* mac */,
 				C942235715652B5300354D37 /* iphone */,
-				C942235D15652B5300354D37 /* mac */,
 			);
 			path = src;
 			sourceTree = "<group>";
@@ -918,14 +925,6 @@
 				C942235815652B5300354D37 /* config.h */,
 			);
 			path = iphone;
-			sourceTree = "<group>";
-		};
-		C942235D15652B5300354D37 /* mac */ = {
-			isa = PBXGroup;
-			children = (
-				C942235E15652B5300354D37 /* config.h */,
-			);
-			path = mac;
 			sourceTree = "<group>";
 		};
 		C94661A715611337004336EC = {
@@ -1751,7 +1750,6 @@
 				C942236415652B5300354D37 /* ev.h in Headers */,
 				C942236615652B5300354D37 /* event.h in Headers */,
 				C942237C15652B5300354D37 /* config.h in Headers */,
-				C942238215652B5300354D37 /* config.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1763,7 +1761,6 @@
 				C942236515652B5300354D37 /* ev.h in Headers */,
 				C942236715652B5300354D37 /* event.h in Headers */,
 				C942237D15652B5300354D37 /* config.h in Headers */,
-				C942238315652B5300354D37 /* config.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2633,6 +2630,7 @@
 		C94661D115611339004336EC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "../AWeibo/ios/AWeibo-Prefix.pch";
 				HEADER_SEARCH_PATHS = (
@@ -2652,6 +2650,8 @@
 					"-lz",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = NO;
+				USER_HEADER_SEARCH_PATHS = "../include ../3rdTools/libxml2/include ../3rdTools/libev/include ../3rdTools/yajl/include ../3rdTools/yaml/include";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -2659,6 +2659,7 @@
 		C94661D215611339004336EC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "../AWeibo/ios/AWeibo-Prefix.pch";
 				HEADER_SEARCH_PATHS = (
@@ -2678,6 +2679,8 @@
 					"-lz",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = NO;
+				USER_HEADER_SEARCH_PATHS = "../include ../3rdTools/libxml2/include ../3rdTools/libev/include ../3rdTools/yajl/include ../3rdTools/yaml/include";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -2913,6 +2916,7 @@
 				C942233D15652AD600354D37 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C942234315652ADF00354D37 /* Build configuration list for PBXNativeTarget "ev-mac" */ = {
 			isa = XCConfigurationList;
@@ -2921,6 +2925,7 @@
 				C942234515652ADF00354D37 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C94661AC15611337004336EC /* Build configuration list for PBXProject "AWeibo" */ = {
 			isa = XCConfigurationList;
