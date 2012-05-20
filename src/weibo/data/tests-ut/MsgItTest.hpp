@@ -8,6 +8,8 @@ public:
 
     virtual void SetUp();
     virtual void TearDown();
+
+    weibo_msg_it_t msg_it_create(void);
 };
 
 #endif

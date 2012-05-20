@@ -30,6 +30,8 @@ gd_app_context_t weibo_manage_app(weibo_manage_t mgr);
 const char * weibo_manage_name(weibo_manage_t mgr);
 cpe_hash_string_t weibo_manage_name_hs(weibo_manage_t mgr);
 
+weibo_msg_it_t weibo_msg_query_all(weibo_manage_t mgr);
+
 #ifdef __cplusplus
 }
 #endif

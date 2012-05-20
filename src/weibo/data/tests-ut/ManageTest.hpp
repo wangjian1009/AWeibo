@@ -5,6 +5,7 @@
 #include "cpe/cfg/tests-env/with_cfg.hpp"
 #include "gd/app/tests-env/with_app.hpp"
 #include "weibo/data/tests-env/with_weibo_manage.hpp"
+#include "../weibo_internal_ops.h"
 
 typedef LOKI_TYPELIST_4(
     utils::testenv::with_em

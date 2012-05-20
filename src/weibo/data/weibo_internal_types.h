@@ -4,6 +4,7 @@
 #include "cpe/utils/memory.h"
 #include "cpe/utils/hash.h"
 #include "cpe/utils/hash_string.h"
+#include "gd/app/app_types.h"
 #include "weibo/data/weibo_types.h"
 
 #ifdef __cplusplus
@@ -17,8 +18,6 @@ extern "C" {
                                         - sizeof(uint16_t)) \
                                        / sizeof(weibo_msg_local_it_t))
 
-typedef uint32_t weibo_msg_local_it_t;
-
 typedef TAILQ_HEAD(weibo_msg_it_list, weibo_msg_it) weibo_msg_it_list_t;
 
 struct weibo_manage {
@@ -31,7 +30,7 @@ struct weibo_manage {
 };
 
 struct weibo_msg {
-    struct weibo_page * m_page;
+    weibo_msg_local_it_t m_id;
 };
 
 struct weibo_msg_id_page {
@@ -46,8 +45,11 @@ struct weibo_msg_it {
     TAILQ_ENTRY(weibo_msg_it) m_next_it;
     struct weibo_msg_id_page * m_id_pages_head;
     struct weibo_msg_id_page * m_id_pages_last;
+    weibo_msg_next_fun_t m_next_fun;
+    void * m_next_ctx;
+    struct weibo_msg m_msg_buf;
 };
- 
+
 #ifdef __cplusplus
 }
 #endif
