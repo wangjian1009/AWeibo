@@ -21,7 +21,8 @@ weibo_manage_t
 weibo_manage_create(
     gd_app_context_t app,
     const char * name,
-    mem_allocrator_t alloc)
+    mem_allocrator_t alloc,
+    error_monitor_t em)
 {
     weibo_manage_t mgr;
     nm_node_t mgr_node;
@@ -34,10 +35,19 @@ weibo_manage_create(
     mgr = (weibo_manage_t)nm_node_data(mgr_node);
     mgr->m_alloc = alloc;
     mgr->m_app = app;
+    mgr->m_em = em;
     mgr->m_debug = 0;
+
+    mgr->m_pages_count = 0;
+    mgr->m_pages_capacity = 0;
+    mgr->m_pages_by_id = NULL;
+    mgr->m_pages_by_time = NULL;
 
     TAILQ_INIT(&mgr->m_runing_it_list);
     mgr->m_msg_id_page_free_list = NULL;
+
+    mgr->m_persistent = NULL;
+    mgr->m_persistent_ctx = NULL;
 
     nm_node_set_type(mgr_node, &s_nm_node_type_weibo_manage);
 
@@ -48,8 +58,12 @@ static void weibo_manage_clear(nm_node_t node) {
     weibo_manage_t mgr;
     mgr = (weibo_manage_t)nm_node_data(node);
 
+    weibo_manage_set_persistent(mgr, NULL, NULL);
+
     weibo_msg_it_free_all(mgr);
     weibo_msg_id_page_list_free_all(mgr);
+
+    weibo_manage_pages_free_all(mgr);
 }
 
 void weibo_manage_free(weibo_manage_t mgr) {
@@ -108,11 +122,18 @@ weibo_manage_name_hs(weibo_manage_t mgr) {
     return nm_node_name_hs(nm_node_from_data(mgr));
 }
 
+void weibo_manage_set_persistent(weibo_manage_t mgr, struct weibo_persistent * persistent, void * ctx) {
+    if (mgr->m_persistent) mgr->m_persistent->m_fini(mgr, mgr->m_persistent_ctx);
+
+    mgr->m_persistent = persistent;
+    mgr->m_persistent_ctx = ctx;
+}
+
 EXPORT_DIRECTIVE
 int weibo_manage_app_init(gd_app_context_t app, gd_app_module_t module, cfg_t cfg) {
     weibo_manage_t weibo_manage;
 
-    weibo_manage = weibo_manage_create(app, gd_app_module_name(module), gd_app_alloc(app));
+    weibo_manage = weibo_manage_create(app, gd_app_module_name(module), gd_app_alloc(app), gd_app_em(app));
     if (weibo_manage == NULL) return -1;
 
     weibo_manage->m_debug = cfg_get_int32(cfg, "debug", 0);

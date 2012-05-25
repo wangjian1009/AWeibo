@@ -6,10 +6,18 @@
 extern "C" {
 #endif
 
+#define WEIBO_MSG_BLOCK_MSG_COUNT 256
+#define WEIBO_MSG_BLOCK_COUNT 256
+
 struct weibo_msg_basic {
     uint16_t m_creation_time;
     uint16_t m_creation_user;
-    uint32_t m_data_pos;
+    uint16_t m_data_pos;
+    uint16_t m_data_size;
+};
+
+struct weibo_msg_block {
+    struct weibo_msg_basic m_msgs[WEIBO_MSG_BLOCK_MSG_COUNT];
 };
 
 struct weibo_msg_page_head {
@@ -17,6 +25,7 @@ struct weibo_msg_page_head {
     uint32_t m_contain_end_time;
     int16_t m_msg_capacity;
     int16_t m_msg_count;
+    uint32_t m_msg_block_addresses[WEIBO_MSG_BLOCK_COUNT];
 };
 
 struct weibo_user_basic {

@@ -1,5 +1,6 @@
 #include "cpe/utils/buffer.h"
 #include "cpe/utils/stream_buffer.h"
+#include "cpe/utils/tests-env/with_em.hpp"
 #include "gd/app/tests-env/with_app.hpp"
 #include "weibo/data/tests-env/with_weibo_manage.hpp"
 
@@ -9,11 +10,14 @@ with_weibo_manage::with_weibo_manage() {
 }
 
 void with_weibo_manage::SetUp() {
+    utils::testenv::with_em * env_em = tryEnvOf<utils::testenv::with_em>();
+
     ASSERT_TRUE(
         weibo_manage_create(
             envOf<gd::app::testenv::with_app>().t_app(),
             NULL,
-            t_allocrator()));
+            t_allocrator(),
+            env_em ? env_em->t_em() : NULL));
 }
 
 void with_weibo_manage::TearDown() {

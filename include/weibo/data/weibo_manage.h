@@ -2,6 +2,7 @@
 #define WEIBO_DATA_MANAGE_H
 #include "cpe/utils/memory.h"
 #include "cpe/utils/hash_string.h"
+#include "cpe/utils/error.h"
 #include "gd/app/app_types.h"
 #include "weibo_types.h"
 
@@ -13,7 +14,8 @@ weibo_manage_t
 weibo_manage_create(
     gd_app_context_t app,
     const char * name,
-    mem_allocrator_t alloc);
+    mem_allocrator_t alloc,
+    error_monitor_t em);
 
 void weibo_manage_free(weibo_manage_t mgr);
 
